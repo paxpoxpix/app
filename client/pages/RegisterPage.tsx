@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 import { register } from '../features/auth/authSlice';
 
 const RegisterPage: React.FC = () => {
