@@ -1,4 +1,3 @@
-
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { RootState } from '../../app/store';
@@ -61,7 +60,6 @@ const authSlice = createSlice({
   },
 });
 
+export const authReducer = authSlice.reducer;
+export const { login, register } = authSlice.actions;
 export const selectUserId = (state: RootState) => state.auth.userId;
-
-export default authSlice.reducer;
-
