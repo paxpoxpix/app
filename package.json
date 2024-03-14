@@ -1,0 +1,40 @@
+{
+    "name": "narrativai",
+    "version": "1.0.0",
+    "description": "AI-Powered Conversational Web Application",
+    "main": "server/index.ts",
+    "scripts": {
+        "start": "bun run server/index.ts",
+        "dev": "bun i && bun --watch server/index.ts",
+        "build": "cd client && bun build"
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "latest",
+        "axios": "latest",
+        "bcrypt": "latest",
+        "cookie-parser": "latest",
+        "esbuild": "latest",
+        "express": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "react-redux": "latest",
+        "react-router-dom": "latest",
+        "socket.io": "latest",
+        "socket.io-client": "latest",
+        "sqlite": "latest",
+        "sqlite3": "latest",
+        "uuid": "latest"
+    },
+    "devDependencies": {
+        "@types/bcrypt": "latest",
+        "@types/cookie-parser": "latest",
+        "@types/express": "latest",
+        "@types/node": "latest",
+        "@types/react": "latest",
+        "@types/react-dom": "latest",
+        "@types/react-router-dom": "latest",
+        "@types/uuid": "latest",
+        "concurrently": "latest",
+        "typescript": "latest"
+    }
+}

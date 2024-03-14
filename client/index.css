@@ -1,0 +1,85 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.character-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.conversation-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.conversation-history {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.conversation-input {
+  display: flex;
+  padding: 20px;
+}
+
+.conversation-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.conversation-input button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
