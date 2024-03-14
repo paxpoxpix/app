@@ -1,4 +1,3 @@
-
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { RootState } from '../../app/store';
@@ -88,7 +87,6 @@ const conversationsSlice = createSlice({
   },
 });
 
+export const conversationReducer = conversationsSlice.reducer;
+export const { startConversation, fetchConversationHistory, sendMessage } = conversationsSlice.actions;
 export const selectConversationHistory = (state: RootState) => state.conversation.conversationHistory;
-
-export default conversationsSlice.reducer;
-
