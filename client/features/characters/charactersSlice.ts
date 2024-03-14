@@ -1,4 +1,3 @@
-
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { RootState } from '../../app/store';
@@ -44,7 +43,6 @@ const charactersSlice = createSlice({
   },
 });
 
+export const characterReducer = charactersSlice.reducer;
+export const { fetchCharacters } = charactersSlice.actions;
 export const selectCharacters = (state: RootState) => state.characters.characters;
-
-export default charactersSlice.reducer;
-
