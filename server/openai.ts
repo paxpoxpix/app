@@ -10,7 +10,7 @@ export async function generateAIResponse(prompt: string): Promise<string> {
       {
         prompt,
         max_tokens: 100,
-        model: google/gemma-7b-it,
+        model: 'google/gemma-7b-it',
         n: 1,
         stop: null,
         temperature: 0.8,
